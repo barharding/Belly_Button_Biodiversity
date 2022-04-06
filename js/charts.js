@@ -91,13 +91,13 @@ function buildCharts(sample) {
     // 9. Create the layout for the bar chart. 
     var barLayout = {
       title: "<b>Top 10 Bacteria Cultures Found</b>",
-      width: 460, 
-      height: 500, 
+      width: 500, 
+      height: 400, 
          };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot('bar',barData, barLayout);
 
-    // 1. Create the trace for the bubble chart.
+    //Create the trace for the bubble chart.
 
     var trace2 = {
       x: Ids,
@@ -107,30 +107,30 @@ function buildCharts(sample) {
       marker: {
         color: Ids,
         size: sampleValues,
-        colorscale: "mygbm"
+        colorscale: "Blues"
       }
     };
 
     var bubbleData = [trace2];
 
-    // 2. Create the layout for the bubble chart.
+    //Create the layout for the bubble chart.
     var bubbleLayout = {
       title: "<b>Bacteria Cultures Per Sample</b>",
       xaxis:{title: "OTU ID"},
       hovermode: 'closest',
-      width:1145
+      width:1180
     };
 
     // Use Plotly to plot the data with the layout.
   
     Plotly.newPlot('bubble',bubbleData, bubbleLayout);
 
-    // D3: 4. Create the trace for the gauge chart.
+    //Create the trace for the gauge chart.
 
     //create a variable that converts the washing frequency to a floating point number.
     var metadata = data.metadata;
-    var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
-    var result = resultArray[0];
+    var metaresult = metadata.filter(sampleObj => sampleObj.id == sample);
+    var result = metaresult[0];
     var wFreq = result.wfreq;
 
    
@@ -154,13 +154,13 @@ function buildCharts(sample) {
        }
     var gaugeData = [trace3];
   
-    // 5. Create the layout for the gauge chart.
+    //Create the layout for the gauge chart.
     var gaugeLayout = { 
-      width: 460, 
+      width: 500, 
       height: 400, 
       margin: { t: 0, b: 0 } };
 
-    // 6. Use Plotly to plot the gauge data and layout.
+    //Use Plotly to plot the gauge data and layout.
     Plotly.newPlot('gauge',gaugeData, gaugeLayout);
 
   });
