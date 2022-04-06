@@ -1,8 +1,6 @@
 # Belly Button Biodiversity
 
-This solution builds a dashboard from a static json file leveraging plotly, javascript, and CSS.
-
-[dashboard](https://barharding.github.io/Belly_Button_Biodiversity/)
+This solution builds a dashboard from a static json file leveraging plotly, javascript, and CSS.  Click here to view the [dashboard](https://barharding.github.io/Belly_Button_Biodiversity/) shown below.
 
 **_Dashboard_**
 
