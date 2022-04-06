@@ -1,7 +1,8 @@
 # Belly Button Biodiversity
 
+This solution builds a dashboard from a static json file leveraging plotly, javascript, and CSS.
 
-**_Figure 1: Spreadsheet results refactored module_**
+**_Dashboard_**
 
 ![Belly Button Dashboard](/images/index.png)
 
