@@ -2,7 +2,7 @@
 
 This solution builds a dashboard from a static json file leveraging plotly, javascript, and CSS.
 
-[dashboard](https://  /)
+[dashboard](https://https://barharding.github.io/Belly_Button_Biodiversity/)
 
 **_Dashboard_**
 
